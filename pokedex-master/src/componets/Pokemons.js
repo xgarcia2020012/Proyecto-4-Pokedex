@@ -105,14 +105,10 @@ const Pokemons = () => {
                 }
 
             </ul>
-            <button className='button_delete_circle' onClick={() => setPage(page - 1)}
-                disabled={page <= 5}>
-                <i className="fas fa-backward"></i>
-            </button>
-            {page} de {totalpages}
-            <button className='button_delete_circle' onClick={() => setPage(page + 1)}
-                disabled={page >= totalpages}
-            > <i className="fas fa-forward"></i>
+          
+            <button  className='button_delete_circle' onClick={() => setPage(page + 1 )}
+               
+            > <i className="fas fa-forward"> refrescar</i>
             </button>
 
         </div>
