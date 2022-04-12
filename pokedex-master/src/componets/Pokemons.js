@@ -56,10 +56,10 @@ const Pokemons = () => {
 
             <div className='container'>
                 <div className='location'>
-                    <h1>Hola : {userName} </h1>
+                    <h1>Hola {userName} </h1>
                     <ul className='location__list'>
                         <select className='header__search-input' onChange={haldleType}>
-                            <option >Selecciona </option>
+                            <option >Selecciona  </option>
 
                             {
                                 types.map(types => (
@@ -76,13 +76,13 @@ const Pokemons = () => {
                                 <label htmlFor="pokemons-name" ></label>
                                 <input className='header__search-input'
                                     type="text"
-                                    placeholder='Busca tu pokemon Favorito'
+                                    placeholder='Busca tu pokemon favorito'
                                     id="pokemons-name"
                                     value={pokemonName}
                                     onChange={e => setpokemonName(e.target.value)}
                                 />
                                 <button className='button_success' >
-                                    <i className="fas fa-search"></i>  buscar
+                                    <i className="fas fa-search"></i>  Buscar
                                 </button>
                             </div>
                         </form>
@@ -109,7 +109,7 @@ const Pokemons = () => {
                 disabled={page <= 1}>
                 <i className="fas fa-backward"></i>
             </button>
-            {page} of {totalpages}
+            {page} de {totalpages}
             <button className='button_delete_circle' onClick={() => setPage(page + 1)}
                 disabled={page >= totalpages}
             > <i className="fas fa-forward"></i>

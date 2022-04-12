@@ -20,9 +20,9 @@ const PokemonsCards = ({ pokemonsUrl }) => {
                 <img src={pokemons.sprites?.other.home.front_default} alt="" />
 
                 <ul className='location__list'>
-                    <li cl><span className='lotation_list-subtitle'> </span><b>Type </b>{pokemons.types?.[0].type.name}</li>
-                    <li cl><span className='lotation_list-subtitle' > </span><b>Height</b> {pokemons.height}M</li>
-                    <li cl><span className='lotation_list-subtitle'> </span><b>Weight</b> {pokemons.weight}Kg</li>
+                    <li cl><span className='lotation_list-subtitle'> </span><b>Tipo </b>{pokemons.types?.[0].type.name}</li>
+                    <li cl><span className='lotation_list-subtitle' > </span><b>altura</b> {pokemons.height}M</li>
+                    <li cl><span className='lotation_list-subtitle'> </span><b>Peso</b> {pokemons.weight}Kg</li>
                 </ul>
 
             </Link>

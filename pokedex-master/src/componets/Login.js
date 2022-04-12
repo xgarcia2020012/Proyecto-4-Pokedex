@@ -5,7 +5,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 const Login = () => {
 
-    
+   
     const [ userName, setUserName ] = useState("");
     
     const dispatch = useDispatch();
@@ -35,17 +35,16 @@ const Login = () => {
             <form action="" onSubmit={submit}>
                 <input className='header__search-input'
                     type="text"
-                    placeholder='Ingresa tu nombre'
+                    placeholder='Coloca tu nombre'
                     value={userName} 
                     onChange={e => setUserName(e.target.value)}
                     required
                 />
-                <button className='button_success' > <i className="fas fa-share"></i> Registrarse</button>
+                <button className='button_success' > <i className="fas fa-share"></i>Ingresa</button>
                 
             </form>
         </div>
     );
 };
-
 
 export default Login;
