@@ -25,7 +25,7 @@ const Pokemons = () => {
     const totalpages = Math.ceil(pokemons?.length / itemNumber)
     const pokemonPaginated = pokemons?.slice(fistIndex, lastIndex);
     const pagesNumbers = []
-    for (let i = 1; i <= totalpages; i++) {
+    for (let i = 2; i <= totalpages; i++) {
         pagesNumbers.push(i)
     }
 
@@ -106,7 +106,7 @@ const Pokemons = () => {
 
             </ul>
             <button className='button_delete_circle' onClick={() => setPage(page - 1)}
-                disabled={page <= 1}>
+                disabled={page <= 5}>
                 <i className="fas fa-backward"></i>
             </button>
             {page} de {totalpages}
