@@ -106,7 +106,7 @@ const Pokemons = () => {
 
             </ul>
           
-            <button  className='button_delete_circle' onClick={() => setPage(page + 1 )}
+            <button  className='button_delete_circle' onClick={() => setPage(Math.random() * totalpages )}
                
             > <i className="fas fa-forward"> refrescar</i>
             </button>
